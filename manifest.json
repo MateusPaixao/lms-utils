@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Sorteador de Alunos",
+  "version": "1.0",
+  "description": "Adiciona um botão para sortear alunos.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://lms.ada.tech/teacher/lectures*"],
+      "js": ["dist/sorteador.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {}
+}
