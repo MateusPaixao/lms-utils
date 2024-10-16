@@ -1,14 +1,16 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (env) => {
-  // Se o valor 'production' for passado como env, isProduction será true
   const isProduction = env.production === true;
 
   return {
     mode: isProduction ? 'production' : 'development',
-    entry: './src/sorteador.ts',
+    entry: {
+      sorteador: './src/index.ts'
+    },
     output: {
-      filename: 'sorteador.js',
+      filename: '[name].js',
       path: path.resolve(__dirname, 'dist')
     },
     devtool: isProduction ? false : 'source-map',
@@ -24,6 +26,13 @@ module.exports = (env) => {
         }
       ]
     },
+    plugins: [
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: 'src/manifest.json', to: 'manifest.json' }
+        ]
+      })
+    ],
     optimization: {
       minimize: isProduction
     }

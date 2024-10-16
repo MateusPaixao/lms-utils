@@ -11,7 +11,7 @@
   "content_scripts": [
     {
       "matches": ["https://lms.ada.tech/teacher/lectures*"],
-      "js": ["dist/sorteador.js"],
+      "js": ["sorteador.js"],
       "run_at": "document_idle"
     }
   ],
