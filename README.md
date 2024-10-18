@@ -11,9 +11,12 @@ Este projeto utiliza o Webpack para criar uma extensão rápida e eficiente, com
 -  **Sorteador**: Criar um sorteador baseado na lista de alunos do LMS! Acessar o link: https://lms.ada.tech/teacher/lectures com a extensão instalada.
 
 
+Fechado             |  Aberto
+:-------------------------:|:-------------------------:
+<img src="/src/assets/docs/sorteador-closed.jpeg" width="200" alt="Imagem sorteador fechado"/>  |  <img src="/src/assets/docs/sorteador-opened.jpeg" width="200" alt="Imagem sorteador aberto"/>
 
-<img src="/src/assets/docs/sorteador-closed.jpeg" width="100" alt="Imagem sorteador fechado"/>
-<img src="/src/assets/docs/sorteador-opened.jpeg" width="100" alt="Imagem sorteador aberto"/>
+
+
 
 ## Tecnologias
 
