@@ -3,10 +3,10 @@ import { Aluno } from "./aluno";
 export class UI {
     private constructor(private readonly aluno: Aluno) {}
 
-    private criarBotao(texto: string) {
+    private criarBotao(texto: string, bg = 'blue') {
         const button = document.createElement('button');
         button.innerText = texto;
-        button.style.background = 'blue';
+        button.style.background = bg;
         button.style.color = '#fff';
         button.style.padding = '10px 20px';
         button.style.fontSize = '16px';
@@ -80,7 +80,7 @@ export class UI {
         container.appendChild(campoNomeAluno);
 
         // Botão Sortear Alunos
-        const botaoSortear = this.criarBotao('Sortear Alunos');
+        const botaoSortear = this.criarBotao('Sortear Alunos', 'purple');
         botaoSortear.onclick = () => this.aluno.sortearAlunos();
         container.appendChild(botaoSortear);
 

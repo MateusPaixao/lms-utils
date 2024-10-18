@@ -1,5 +1,6 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (env) => {
   const isProduction = env.production === true;
@@ -27,9 +28,11 @@ module.exports = (env) => {
       ]
     },
     plugins: [
+      new CleanWebpackPlugin(),
       new CopyWebpackPlugin({
         patterns: [
-          { from: 'src/manifest.json', to: 'manifest.json' }
+          { from: 'src/manifest.json', to: 'manifest.json' },
+          { from: 'src/assets/icons/*.png', to: 'icons/[name].[ext]' }
         ]
       })
     ],
