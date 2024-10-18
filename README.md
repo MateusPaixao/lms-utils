@@ -10,8 +10,10 @@ Este projeto utiliza o Webpack para criar uma extensão rápida e eficiente, com
 
 -  **Sorteador**: Criar um sorteador baseado na lista de alunos do LMS! Acessar o link: https://lms.ada.tech/teacher/lectures com a extensão instalada.
 
-![Imagem sorteador fechado|100](/src/assets/docs/sorteador-closed.jpeg)
-  ![Imagem sorteador aberto|100](/src/assets/docs/sorteador-opened.jpeg)
+
+
+<img src="/src/assets/docs/sorteador-closed.jpeg" alt="Imagem sorteador fechado"/>
+<img src="/src/assets/docs/sorteador-opened.jpeg" alt="Imagem sorteador aberto"/>
 
 ## Tecnologias
 
@@ -83,6 +85,6 @@ yarn build
 - Habilite o modo desenvolvedor
 - Carregue a extensão a partir da pasta *dist*/
 
-![Imagem gerenciar extensões chrome|100](/src/assets/docs/extensions-manager.jpeg)
+<img src="/src/assets/docs/extensions-manager.jpeg" alt="Imagem gerenciar extensões chrome"/>
 
 - Acesse a o LMS na página que deseja utilizar, por enquanto temos o utilitários sorteador na página de lista de presença: https://lms.ada.tech/teacher/lectures
